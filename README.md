@@ -11,6 +11,7 @@
 | src/train-rl.py              | script to train RL model and generate RL-based music                |
 | src/util.py                  | common utility functions                                            |
 | src/gym-melody/gym_melody/envs/melody_env.py | OpenAI Gym environment for training RL model        |
+| src/analysis/*               | Scripts for generating analysis plots                               |
 | data/bach-encoded            | Encoded Bach music                                                  |
 
 # Preprocessing
