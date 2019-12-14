@@ -5,9 +5,10 @@
 | -----------------------------|:------------------------------------------------------------------- |
 | src/midi_to_words_music21.py | utility for encoding MIDI files into notes and rests representation |
 | src/encoding_to_wordvec.py   | utility for training a Word2Vec model from encoded representation   |
-| src/baseline.py              | script to train baseline model                                      |
+| src/baseline.py              | script to train baseline model and generate baseline music          |
 | src/train.py                 | script to train LSTM model using Keras                              |
 | src/test_word2vec.py         | script to generate music using LSTM model                           |
+| src/train-rl.py              | script to train RL model and generate RL-based music                |
 | src/util.py                  | common utility functions                                            |
 | src/gym-melody/gym_melody/envs/melody_env.py | OpenAI Gym environment for training RL model        |
 
@@ -62,7 +63,6 @@ The training step also generates baseline music to `data/bach-baseline`
     $ python src/train-rl.py --lstm-model weights.02-3.37.hdf5 --word2vec-model wv.pickle
     ```
 ## Generating music
-* Generate music
 * Train RL model using the specified checkpoint for LSTM reward.
     ```
     $ python src/train-rl.py --lstm-model weights.02-3.37.hdf5 --word2vec-model wv.pickle --q-network q-network-epoch-100.h5 --test --output-path ./
