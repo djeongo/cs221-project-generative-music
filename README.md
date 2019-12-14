@@ -11,6 +11,7 @@
 | src/train-rl.py              | script to train RL model and generate RL-based music                |
 | src/util.py                  | common utility functions                                            |
 | src/gym-melody/gym_melody/envs/melody_env.py | OpenAI Gym environment for training RL model        |
+| data/bach-encoded            | Encoded Bach music                                                  |
 
 # Preprocessing
 * Encode MIDI files for training
@@ -27,6 +28,7 @@ training data get generated.
 uses encoded data in `data/bach-encoded` to train word2vec model.
 Generates `word2vec.model` and a pickled file `wv.pickle` containig only the
 word2vec vectors.
+
 
 # Baseline Markov Chain model
 ## Train
